@@ -113,7 +113,7 @@ def globToRegex(pat):
                 res = '%s[%s]' % (res, stuff)
         else:
             res = res + re.escape(c)
-    return res + '\Z(?ms)'
+    return res + r'\Z(?ms)'
 
 def compileGlobMatch(pattern):
     # very important to use match and *not* search!
