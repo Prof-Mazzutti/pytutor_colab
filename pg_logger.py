@@ -76,7 +76,7 @@ PYTUTOR_HIDE_STR = '#pythontutor_hide:'
 # - also accepts shell globs, just like PYTUTOR_HIDE_STR
 PYTUTOR_INLINE_TYPE_STR = '#pythontutor_hide_type:'
 
-CLASS_RE = re.compile('class\s+')
+CLASS_RE = re.compile(r'class\s+')
 
 # copied-pasted from translate() in https://github.com/python/cpython/blob/2.7/Lib/fnmatch.py
 def globToRegex(pat):
